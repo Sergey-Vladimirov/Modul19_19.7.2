@@ -159,7 +159,7 @@ def test_update_self_pet_invalid_age(name='Бобик', animal_type='собак�
     assert status == 400
 
 
-def test_put_api_pet_invalid_pet_id(pet_id='hello', name='Леопольд', animal_type='кот', age=1):
+def test_put_api_pet_invalid_pet_id(pet_id='hello', name='Леопольд', animal_type='кот', age=10):
     '''Проверяем, что можно обновить питомца с невалидным id'''
     # Получаем ключ auth_key
     _, auth_key = pf.get_api_key(valid_email, valid_password)
